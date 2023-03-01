@@ -1,13 +1,13 @@
 lvgl/src/core/lv_obj.o: ../lvgl/src/core/lv_obj.c \
  ../lvgl/src/core/lv_obj.h ../lvgl/src/core/../lv_conf_internal.h \
  ../lvgl/src/core/../lv_conf_kconfig.h \
- C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429IDISCOVERY/lv_conf.h \
+ C:/Users/user_us_4/Desktop/TFT/lv_conf.h \
  ../lvgl/src/core/../misc/lv_style.h \
  ../lvgl/src/core/../misc/../font/lv_font.h \
  ../lvgl/src/core/../misc/../font/../lv_conf_internal.h \
  ../lvgl/src/core/../misc/../font/lv_symbol_def.h \
  ../lvgl/src/core/../misc/../font/../misc/lv_area.h \
- ../lvgl/src/core/../misc/../font/../misc/../lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
  ../lvgl/src/core/../misc/lv_color.h \
  ../lvgl/src/core/../misc/../lv_conf_internal.h \
  ../lvgl/src/core/../misc/lv_assert.h ../lvgl/src/core/../misc/lv_log.h \
@@ -29,16 +29,16 @@ lvgl/src/core/lv_obj.o: ../lvgl/src/core/lv_obj.c \
  ../lvgl/src/core/../hal/../draw/../misc/lv_color.h \
  ../lvgl/src/core/../hal/../draw/../misc/lv_area.h \
  ../lvgl/src/core/../hal/../draw/../misc/lv_fs.h \
- ../lvgl/src/core/../hal/../draw/../misc/../lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
  ../lvgl/src/core/../hal/../draw/../misc/lv_types.h \
  ../lvgl/src/core/../hal/../draw/lv_img_cache.h \
  ../lvgl/src/core/../hal/../draw/lv_draw_rect.h \
  ../lvgl/src/core/../hal/../draw/sw/lv_draw_sw_gradient.h \
  ../lvgl/src/core/../hal/../draw/sw/lv_draw_sw_dither.h \
- ../lvgl/src/core/../hal/../draw/sw/../../core/lv_obj_pos.h \
- ../lvgl/src/core/../hal/../draw/sw/../../core/../misc/lv_area.h \
- ../lvgl/src/core/../hal/../draw/sw/../../misc/lv_color.h \
- ../lvgl/src/core/../hal/../draw/sw/../../misc/lv_style.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj_pos.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_area.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_color.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_style.h \
  ../lvgl/src/core/../hal/../draw/lv_draw_label.h \
  ../lvgl/src/core/../hal/../draw/../misc/lv_bidi.h \
  ../lvgl/src/core/../hal/../draw/lv_draw_img.h \
@@ -55,7 +55,7 @@ lvgl/src/core/lv_obj.o: ../lvgl/src/core/lv_obj.c \
  ../lvgl/src/core/../hal/../misc/lv_timer.h \
  ../lvgl/src/core/../hal/../misc/../lv_conf_internal.h \
  ../lvgl/src/core/../hal/../misc/../hal/lv_hal_tick.h \
- ../lvgl/src/core/../hal/../misc/../hal/../lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
  ../lvgl/src/core/../hal/lv_hal_indev.h \
  ../lvgl/src/core/../hal/../lv_conf_internal.h \
  ../lvgl/src/core/../hal/lv_hal_tick.h ../lvgl/src/core/lv_obj_tree.h \
@@ -78,166 +78,166 @@ lvgl/src/core/lv_obj.o: ../lvgl/src/core/lv_obj.c \
  ../lvgl/src/core/../libs/bmp/lv_bmp.h \
  ../lvgl/src/core/../libs/bmp/../../lv_conf_internal.h \
  ../lvgl/src/core/../libs/ffmpeg/lv_ffmpeg.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../lvgl.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/misc/lv_log.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/misc/lv_timer.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/misc/lv_math.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/misc/lv_mem.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/misc/lv_async.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/misc/lv_anim_timeline.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/misc/lv_anim.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/misc/lv_printf.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/hal/lv_hal.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/core/lv_group.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/core/lv_indev.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/core/lv_refr.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/core/lv_disp.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/core/lv_theme.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/font/lv_font.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/font/lv_font_loader.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/font/lv_font_fmt_txt.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/font/lv_font.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/animimg/lv_animimg.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/animimg/../img/lv_img.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/animimg/../img/../../lv_conf_internal.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/animimg/../img/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/animimg/../img/../../misc/lv_fs.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/animimg/../img/../../draw/lv_draw.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/arc/lv_arc.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/arc/../../lv_conf_internal.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/arc/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/lv_bar.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../../lv_conf_internal.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../../misc/lv_anim.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../label/lv_label.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../label/../../lv_conf_internal.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../label/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../label/../../font/lv_font.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../label/../../font/lv_symbol_def.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../label/../../misc/lv_txt.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../label/../../draw/lv_draw.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/btn/lv_btn.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/btn/../../lv_conf_internal.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/btn/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/btnmatrix/lv_btnmatrix.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/btnmatrix/../../lv_conf_internal.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/btnmatrix/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/calendar/lv_calendar.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/calendar/../btnmatrix/lv_btnmatrix.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/calendar/lv_calendar_header_arrow.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/calendar/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/calendar/lv_calendar_header_dropdown.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/canvas/lv_canvas.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/canvas/../../lv_conf_internal.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/canvas/../img/lv_img.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/canvas/../../draw/lv_draw_img.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/chart/lv_chart.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/chart/../../lvgl.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/chart/../../../lvgl.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/chart/../../lv_conf_internal.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/checkbox/lv_checkbox.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/checkbox/../../lv_conf_internal.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/checkbox/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/colorwheel/lv_colorwheel.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/colorwheel/../../lvgl.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/dropdown/lv_dropdown.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/dropdown/../../lv_conf_internal.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/dropdown/../label/lv_label.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/img/lv_img.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/imgbtn/lv_imgbtn.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/imgbtn/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/keyboard/lv_keyboard.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/keyboard/../btnmatrix/lv_btnmatrix.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/label/lv_label.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/led/lv_led.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/led/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/line/lv_line.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/line/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/list/lv_list.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/list/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/menu/lv_menu.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/menu/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/meter/lv_meter.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/meter/../../../lvgl.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/msgbox/lv_msgbox.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/msgbox/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/roller/lv_roller.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/roller/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/roller/../label/lv_label.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/slider/lv_slider.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/slider/../bar/lv_bar.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/span/lv_span.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/span/../../../lvgl.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/spinbox/lv_spinbox.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/spinbox/../textarea/lv_textarea.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/spinbox/../textarea/../label/lv_label.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/spinner/lv_spinner.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/spinner/../../../lvgl.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/switch/lv_switch.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/switch/../../lv_conf_internal.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/switch/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/table/lv_table.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/table/../label/lv_label.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/tabview/lv_tabview.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/tabview/../../../lvgl.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/textarea/lv_textarea.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/tileview/lv_tileview.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/tileview/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/win/lv_win.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/win/../../../lvgl.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/others/snapshot/lv_snapshot.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/others/snapshot/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/others/monkey/lv_monkey.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/others/monkey/../../../lvgl.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/others/gridnav/lv_gridnav.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/others/gridnav/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/others/fragment/lv_fragment.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/others/fragment/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/others/imgfont/lv_imgfont.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/others/imgfont/../../../lvgl.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/others/msg/lv_msg.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/others/msg/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/others/ime/lv_ime_pinyin.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/others/ime/../../../lvgl.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/others/file_explorer/lv_file_explorer.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/others/file_explorer/../../../lvgl.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/libs/bmp/lv_bmp.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/libs/fsdrv/lv_fsdrv.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/libs/fsdrv/../../lv_conf_internal.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/libs/png/lv_png.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/libs/png/../../lv_conf_internal.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/libs/gif/lv_gif.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/libs/gif/../../../lvgl.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/libs/gif/gifdec.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/libs/gif/../../misc/lv_fs.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/libs/qrcode/lv_qrcode.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/libs/qrcode/../../../lvgl.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/libs/sjpg/lv_sjpg.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/libs/freetype/lv_freetype.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/libs/freetype/../../../lvgl.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/libs/rlottie/lv_rlottie.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/libs/rlottie/../../../lvgl.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/libs/ffmpeg/lv_ffmpeg.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/libs/tiny_ttf/lv_tiny_ttf.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/libs/tiny_ttf/../../../lvgl.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/layouts/flex/lv_flex.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/layouts/flex/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/layouts/grid/lv_grid.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/layouts/grid/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/draw/lv_draw.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/themes/lv_themes.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/themes/default/lv_theme_default.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/themes/default/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/themes/default/../../core/lv_theme.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/themes/mono/lv_theme_mono.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/themes/mono/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/themes/basic/lv_theme_basic.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/themes/basic/../../core/lv_obj.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/themes/basic/../../core/lv_theme.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/lv_api_map.h \
- ../lvgl/src/core/../libs/ffmpeg/../../../src/../lvgl.h \
+ c:\users\user_us_4\desktop\tft\lvgl\lvgl.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/misc/lv_log.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/misc/lv_timer.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/misc/lv_math.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/misc/lv_mem.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/misc/lv_async.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/misc/lv_anim_timeline.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/misc/lv_anim.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/misc/lv_printf.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/hal/lv_hal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/core/lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/core/lv_group.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/core/lv_indev.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/core/lv_refr.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/core/lv_disp.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/core/lv_theme.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/font/lv_font.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/font/lv_font_loader.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/font/lv_font_fmt_txt.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/font/lv_font.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/animimg/lv_animimg.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\widgets\img\lv_img.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_fs.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\draw\lv_draw.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/arc/lv_arc.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/bar/lv_bar.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_anim.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\widgets\label\lv_label.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\font\lv_font.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\font\lv_symbol_def.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_txt.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\draw\lv_draw.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/btn/lv_btn.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/btnmatrix/lv_btnmatrix.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/calendar/lv_calendar.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\widgets\btnmatrix\lv_btnmatrix.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/calendar/lv_calendar_header_arrow.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/calendar/lv_calendar_header_dropdown.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/canvas/lv_canvas.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\widgets\img\lv_img.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\draw\lv_draw_img.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/chart/lv_chart.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lvgl.h \
+ c:\users\user_us_4\desktop\tft\lvgl\lvgl.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/checkbox/lv_checkbox.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/colorwheel/lv_colorwheel.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lvgl.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/dropdown/lv_dropdown.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\widgets\label\lv_label.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/img/lv_img.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/imgbtn/lv_imgbtn.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/keyboard/lv_keyboard.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\widgets\btnmatrix\lv_btnmatrix.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/label/lv_label.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/led/lv_led.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/line/lv_line.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/list/lv_list.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/menu/lv_menu.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/meter/lv_meter.h \
+ c:\users\user_us_4\desktop\tft\lvgl\lvgl.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/msgbox/lv_msgbox.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/roller/lv_roller.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\widgets\label\lv_label.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/slider/lv_slider.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\widgets\bar\lv_bar.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/span/lv_span.h \
+ c:\users\user_us_4\desktop\tft\lvgl\lvgl.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/spinbox/lv_spinbox.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\widgets\textarea\lv_textarea.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\widgets\label\lv_label.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/spinner/lv_spinner.h \
+ c:\users\user_us_4\desktop\tft\lvgl\lvgl.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/switch/lv_switch.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/table/lv_table.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\widgets\label\lv_label.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/tabview/lv_tabview.h \
+ c:\users\user_us_4\desktop\tft\lvgl\lvgl.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/textarea/lv_textarea.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/tileview/lv_tileview.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/widgets/win/lv_win.h \
+ c:\users\user_us_4\desktop\tft\lvgl\lvgl.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/others/snapshot/lv_snapshot.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/others/monkey/lv_monkey.h \
+ c:\users\user_us_4\desktop\tft\lvgl\lvgl.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/others/gridnav/lv_gridnav.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/others/fragment/lv_fragment.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/others/imgfont/lv_imgfont.h \
+ c:\users\user_us_4\desktop\tft\lvgl\lvgl.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/others/msg/lv_msg.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/others/ime/lv_ime_pinyin.h \
+ c:\users\user_us_4\desktop\tft\lvgl\lvgl.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/others/file_explorer/lv_file_explorer.h \
+ c:\users\user_us_4\desktop\tft\lvgl\lvgl.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/libs/bmp/lv_bmp.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/libs/fsdrv/lv_fsdrv.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/libs/png/lv_png.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/libs/gif/lv_gif.h \
+ c:\users\user_us_4\desktop\tft\lvgl\lvgl.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/libs/gif/gifdec.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_fs.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/libs/qrcode/lv_qrcode.h \
+ c:\users\user_us_4\desktop\tft\lvgl\lvgl.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/libs/sjpg/lv_sjpg.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/libs/freetype/lv_freetype.h \
+ c:\users\user_us_4\desktop\tft\lvgl\lvgl.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/libs/rlottie/lv_rlottie.h \
+ c:\users\user_us_4\desktop\tft\lvgl\lvgl.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/libs/ffmpeg/lv_ffmpeg.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/libs/tiny_ttf/lv_tiny_ttf.h \
+ c:\users\user_us_4\desktop\tft\lvgl\lvgl.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/layouts/flex/lv_flex.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/layouts/grid/lv_grid.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/draw/lv_draw.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/themes/lv_themes.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/themes/default/lv_theme_default.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_theme.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/themes/mono/lv_theme_mono.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/themes/basic/lv_theme_basic.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_theme.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src/lv_api_map.h \
+ c:\users\user_us_4\desktop\tft\lvgl\lvgl.h \
  ../lvgl/src/core/../libs/freetype/lv_freetype.h \
  ../lvgl/src/core/../libs/fsdrv/lv_fsdrv.h \
  ../lvgl/src/core/../libs/gif/lv_gif.h \
@@ -249,13 +249,13 @@ lvgl/src/core/lv_obj.o: ../lvgl/src/core/lv_obj.c \
 ../lvgl/src/core/lv_obj.h:
 ../lvgl/src/core/../lv_conf_internal.h:
 ../lvgl/src/core/../lv_conf_kconfig.h:
-C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429IDISCOVERY/lv_conf.h:
+C:/Users/user_us_4/Desktop/TFT/lv_conf.h:
 ../lvgl/src/core/../misc/lv_style.h:
 ../lvgl/src/core/../misc/../font/lv_font.h:
 ../lvgl/src/core/../misc/../font/../lv_conf_internal.h:
 ../lvgl/src/core/../misc/../font/lv_symbol_def.h:
 ../lvgl/src/core/../misc/../font/../misc/lv_area.h:
-../lvgl/src/core/../misc/../font/../misc/../lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
 ../lvgl/src/core/../misc/lv_color.h:
 ../lvgl/src/core/../misc/../lv_conf_internal.h:
 ../lvgl/src/core/../misc/lv_assert.h:
@@ -285,16 +285,16 @@ C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429
 ../lvgl/src/core/../hal/../draw/../misc/lv_color.h:
 ../lvgl/src/core/../hal/../draw/../misc/lv_area.h:
 ../lvgl/src/core/../hal/../draw/../misc/lv_fs.h:
-../lvgl/src/core/../hal/../draw/../misc/../lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
 ../lvgl/src/core/../hal/../draw/../misc/lv_types.h:
 ../lvgl/src/core/../hal/../draw/lv_img_cache.h:
 ../lvgl/src/core/../hal/../draw/lv_draw_rect.h:
 ../lvgl/src/core/../hal/../draw/sw/lv_draw_sw_gradient.h:
 ../lvgl/src/core/../hal/../draw/sw/lv_draw_sw_dither.h:
-../lvgl/src/core/../hal/../draw/sw/../../core/lv_obj_pos.h:
-../lvgl/src/core/../hal/../draw/sw/../../core/../misc/lv_area.h:
-../lvgl/src/core/../hal/../draw/sw/../../misc/lv_color.h:
-../lvgl/src/core/../hal/../draw/sw/../../misc/lv_style.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj_pos.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_area.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_color.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_style.h:
 ../lvgl/src/core/../hal/../draw/lv_draw_label.h:
 ../lvgl/src/core/../hal/../draw/../misc/lv_bidi.h:
 ../lvgl/src/core/../hal/../draw/lv_draw_img.h:
@@ -311,7 +311,7 @@ C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429
 ../lvgl/src/core/../hal/../misc/lv_timer.h:
 ../lvgl/src/core/../hal/../misc/../lv_conf_internal.h:
 ../lvgl/src/core/../hal/../misc/../hal/lv_hal_tick.h:
-../lvgl/src/core/../hal/../misc/../hal/../lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
 ../lvgl/src/core/../hal/lv_hal_indev.h:
 ../lvgl/src/core/../hal/../lv_conf_internal.h:
 ../lvgl/src/core/../hal/lv_hal_tick.h:
@@ -348,166 +348,166 @@ C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429
 ../lvgl/src/core/../libs/bmp/lv_bmp.h:
 ../lvgl/src/core/../libs/bmp/../../lv_conf_internal.h:
 ../lvgl/src/core/../libs/ffmpeg/lv_ffmpeg.h:
-../lvgl/src/core/../libs/ffmpeg/../../../lvgl.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/misc/lv_log.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/misc/lv_timer.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/misc/lv_math.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/misc/lv_mem.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/misc/lv_async.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/misc/lv_anim_timeline.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/misc/lv_anim.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/misc/lv_printf.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/hal/lv_hal.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/core/lv_group.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/core/lv_indev.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/core/lv_refr.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/core/lv_disp.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/core/lv_theme.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/font/lv_font.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/font/lv_font_loader.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/font/lv_font_fmt_txt.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/font/lv_font.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/animimg/lv_animimg.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/animimg/../img/lv_img.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/animimg/../img/../../lv_conf_internal.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/animimg/../img/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/animimg/../img/../../misc/lv_fs.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/animimg/../img/../../draw/lv_draw.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/arc/lv_arc.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/arc/../../lv_conf_internal.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/arc/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/lv_bar.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../../lv_conf_internal.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../../misc/lv_anim.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../label/lv_label.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../label/../../lv_conf_internal.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../label/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../label/../../font/lv_font.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../label/../../font/lv_symbol_def.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../label/../../misc/lv_txt.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/bar/../label/../../draw/lv_draw.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/btn/lv_btn.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/btn/../../lv_conf_internal.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/btn/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/btnmatrix/lv_btnmatrix.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/btnmatrix/../../lv_conf_internal.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/btnmatrix/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/calendar/lv_calendar.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/calendar/../btnmatrix/lv_btnmatrix.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/calendar/lv_calendar_header_arrow.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/calendar/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/calendar/lv_calendar_header_dropdown.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/canvas/lv_canvas.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/canvas/../../lv_conf_internal.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/canvas/../img/lv_img.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/canvas/../../draw/lv_draw_img.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/chart/lv_chart.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/chart/../../lvgl.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/chart/../../../lvgl.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/chart/../../lv_conf_internal.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/checkbox/lv_checkbox.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/checkbox/../../lv_conf_internal.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/checkbox/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/colorwheel/lv_colorwheel.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/colorwheel/../../lvgl.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/dropdown/lv_dropdown.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/dropdown/../../lv_conf_internal.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/dropdown/../label/lv_label.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/img/lv_img.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/imgbtn/lv_imgbtn.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/imgbtn/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/keyboard/lv_keyboard.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/keyboard/../btnmatrix/lv_btnmatrix.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/label/lv_label.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/led/lv_led.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/led/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/line/lv_line.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/line/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/list/lv_list.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/list/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/menu/lv_menu.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/menu/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/meter/lv_meter.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/meter/../../../lvgl.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/msgbox/lv_msgbox.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/msgbox/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/roller/lv_roller.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/roller/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/roller/../label/lv_label.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/slider/lv_slider.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/slider/../bar/lv_bar.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/span/lv_span.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/span/../../../lvgl.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/spinbox/lv_spinbox.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/spinbox/../textarea/lv_textarea.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/spinbox/../textarea/../label/lv_label.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/spinner/lv_spinner.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/spinner/../../../lvgl.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/switch/lv_switch.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/switch/../../lv_conf_internal.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/switch/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/table/lv_table.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/table/../label/lv_label.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/tabview/lv_tabview.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/tabview/../../../lvgl.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/textarea/lv_textarea.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/tileview/lv_tileview.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/tileview/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/win/lv_win.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/widgets/win/../../../lvgl.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/others/snapshot/lv_snapshot.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/others/snapshot/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/others/monkey/lv_monkey.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/others/monkey/../../../lvgl.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/others/gridnav/lv_gridnav.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/others/gridnav/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/others/fragment/lv_fragment.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/others/fragment/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/others/imgfont/lv_imgfont.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/others/imgfont/../../../lvgl.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/others/msg/lv_msg.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/others/msg/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/others/ime/lv_ime_pinyin.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/others/ime/../../../lvgl.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/others/file_explorer/lv_file_explorer.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/others/file_explorer/../../../lvgl.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/libs/bmp/lv_bmp.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/libs/fsdrv/lv_fsdrv.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/libs/fsdrv/../../lv_conf_internal.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/libs/png/lv_png.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/libs/png/../../lv_conf_internal.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/libs/gif/lv_gif.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/libs/gif/../../../lvgl.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/libs/gif/gifdec.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/libs/gif/../../misc/lv_fs.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/libs/qrcode/lv_qrcode.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/libs/qrcode/../../../lvgl.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/libs/sjpg/lv_sjpg.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/libs/freetype/lv_freetype.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/libs/freetype/../../../lvgl.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/libs/rlottie/lv_rlottie.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/libs/rlottie/../../../lvgl.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/libs/ffmpeg/lv_ffmpeg.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/libs/tiny_ttf/lv_tiny_ttf.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/libs/tiny_ttf/../../../lvgl.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/layouts/flex/lv_flex.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/layouts/flex/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/layouts/grid/lv_grid.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/layouts/grid/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/draw/lv_draw.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/themes/lv_themes.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/themes/default/lv_theme_default.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/themes/default/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/themes/default/../../core/lv_theme.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/themes/mono/lv_theme_mono.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/themes/mono/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/themes/basic/lv_theme_basic.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/themes/basic/../../core/lv_obj.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/themes/basic/../../core/lv_theme.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/lv_api_map.h:
-../lvgl/src/core/../libs/ffmpeg/../../../src/../lvgl.h:
+c:\users\user_us_4\desktop\tft\lvgl\lvgl.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/misc/lv_log.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/misc/lv_timer.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/misc/lv_math.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/misc/lv_mem.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/misc/lv_async.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/misc/lv_anim_timeline.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/misc/lv_anim.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/misc/lv_printf.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/hal/lv_hal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/core/lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/core/lv_group.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/core/lv_indev.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/core/lv_refr.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/core/lv_disp.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/core/lv_theme.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/font/lv_font.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/font/lv_font_loader.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/font/lv_font_fmt_txt.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/font/lv_font.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/animimg/lv_animimg.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\widgets\img\lv_img.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_fs.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\draw\lv_draw.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/arc/lv_arc.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/bar/lv_bar.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_anim.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\widgets\label\lv_label.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\font\lv_font.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\font\lv_symbol_def.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_txt.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\draw\lv_draw.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/btn/lv_btn.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/btnmatrix/lv_btnmatrix.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/calendar/lv_calendar.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\widgets\btnmatrix\lv_btnmatrix.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/calendar/lv_calendar_header_arrow.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/calendar/lv_calendar_header_dropdown.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/canvas/lv_canvas.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\widgets\img\lv_img.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\draw\lv_draw_img.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/chart/lv_chart.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lvgl.h:
+c:\users\user_us_4\desktop\tft\lvgl\lvgl.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/checkbox/lv_checkbox.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/colorwheel/lv_colorwheel.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lvgl.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/dropdown/lv_dropdown.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\widgets\label\lv_label.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/img/lv_img.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/imgbtn/lv_imgbtn.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/keyboard/lv_keyboard.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\widgets\btnmatrix\lv_btnmatrix.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/label/lv_label.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/led/lv_led.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/line/lv_line.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/list/lv_list.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/menu/lv_menu.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/meter/lv_meter.h:
+c:\users\user_us_4\desktop\tft\lvgl\lvgl.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/msgbox/lv_msgbox.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/roller/lv_roller.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\widgets\label\lv_label.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/slider/lv_slider.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\widgets\bar\lv_bar.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/span/lv_span.h:
+c:\users\user_us_4\desktop\tft\lvgl\lvgl.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/spinbox/lv_spinbox.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\widgets\textarea\lv_textarea.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\widgets\label\lv_label.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/spinner/lv_spinner.h:
+c:\users\user_us_4\desktop\tft\lvgl\lvgl.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/switch/lv_switch.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/table/lv_table.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\widgets\label\lv_label.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/tabview/lv_tabview.h:
+c:\users\user_us_4\desktop\tft\lvgl\lvgl.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/textarea/lv_textarea.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/tileview/lv_tileview.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/widgets/win/lv_win.h:
+c:\users\user_us_4\desktop\tft\lvgl\lvgl.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/others/snapshot/lv_snapshot.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/others/monkey/lv_monkey.h:
+c:\users\user_us_4\desktop\tft\lvgl\lvgl.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/others/gridnav/lv_gridnav.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/others/fragment/lv_fragment.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/others/imgfont/lv_imgfont.h:
+c:\users\user_us_4\desktop\tft\lvgl\lvgl.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/others/msg/lv_msg.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/others/ime/lv_ime_pinyin.h:
+c:\users\user_us_4\desktop\tft\lvgl\lvgl.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/others/file_explorer/lv_file_explorer.h:
+c:\users\user_us_4\desktop\tft\lvgl\lvgl.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/libs/bmp/lv_bmp.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/libs/fsdrv/lv_fsdrv.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/libs/png/lv_png.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/libs/gif/lv_gif.h:
+c:\users\user_us_4\desktop\tft\lvgl\lvgl.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/libs/gif/gifdec.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_fs.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/libs/qrcode/lv_qrcode.h:
+c:\users\user_us_4\desktop\tft\lvgl\lvgl.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/libs/sjpg/lv_sjpg.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/libs/freetype/lv_freetype.h:
+c:\users\user_us_4\desktop\tft\lvgl\lvgl.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/libs/rlottie/lv_rlottie.h:
+c:\users\user_us_4\desktop\tft\lvgl\lvgl.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/libs/ffmpeg/lv_ffmpeg.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/libs/tiny_ttf/lv_tiny_ttf.h:
+c:\users\user_us_4\desktop\tft\lvgl\lvgl.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/layouts/flex/lv_flex.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/layouts/grid/lv_grid.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/draw/lv_draw.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/themes/lv_themes.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/themes/default/lv_theme_default.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_theme.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/themes/mono/lv_theme_mono.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/themes/basic/lv_theme_basic.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_theme.h:
+c:\users\user_us_4\desktop\tft\lvgl\src/lv_api_map.h:
+c:\users\user_us_4\desktop\tft\lvgl\lvgl.h:
 ../lvgl/src/core/../libs/freetype/lv_freetype.h:
 ../lvgl/src/core/../libs/fsdrv/lv_fsdrv.h:
 ../lvgl/src/core/../libs/gif/lv_gif.h:

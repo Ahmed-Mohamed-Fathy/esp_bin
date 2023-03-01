@@ -1,6 +1,6 @@
-c:\users\quant5\desktop\embeddedgraphicslvgl-mcu3-main\004_clockalarmui\1_32f429idiscovery\lvgl\src\core\lv_obj_pos.h:199:20:lv_obj_center	16	static
-C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429IDISCOVERY/lvgl/src/widgets/slider/lv_slider.h:82:20:lv_slider_set_value	24	static
-C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429IDISCOVERY/lvgl/src/widgets/slider/lv_slider.h:104:20:lv_slider_set_range	24	static
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj_pos.h:199:20:lv_obj_center	16	static
+C:/Users/user_us_4/Desktop/TFT/lvgl/src/widgets/slider/lv_slider.h:82:20:lv_slider_set_value	24	static
+C:/Users/user_us_4/Desktop/TFT/lvgl/src/widgets/slider/lv_slider.h:104:20:lv_slider_set_range	24	static
 ../Core/Src/glvgl_widget.c:9:11:widget_create_mbox	40	static
 ../Core/Src/glvgl_widget.c:17:11:widget_create_radio_btn	32	static
 ../Core/Src/glvgl_widget.c:25:12:widget_create_label	40	static

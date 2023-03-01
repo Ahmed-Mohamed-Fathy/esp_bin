@@ -2,7 +2,7 @@ lvgl/src/draw/lv_img_buf.o: ../lvgl/src/draw/lv_img_buf.c \
  ../lvgl/src/draw/lv_img_buf.h ../lvgl/src/draw/../misc/lv_color.h \
  ../lvgl/src/draw/../misc/../lv_conf_internal.h \
  ../lvgl/src/draw/../misc/../lv_conf_kconfig.h \
- C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429IDISCOVERY/lv_conf.h \
+ C:/Users/user_us_4/Desktop/TFT/lv_conf.h \
  ../lvgl/src/draw/../misc/lv_assert.h ../lvgl/src/draw/../misc/lv_log.h \
  ../lvgl/src/draw/../misc/lv_types.h ../lvgl/src/draw/../misc/lv_mem.h \
  ../lvgl/src/draw/../misc/lv_math.h ../lvgl/src/draw/../misc/lv_area.h \
@@ -23,7 +23,7 @@ lvgl/src/draw/lv_img_buf.o: ../lvgl/src/draw/lv_img_buf.c \
 ../lvgl/src/draw/../misc/lv_color.h:
 ../lvgl/src/draw/../misc/../lv_conf_internal.h:
 ../lvgl/src/draw/../misc/../lv_conf_kconfig.h:
-C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429IDISCOVERY/lv_conf.h:
+C:/Users/user_us_4/Desktop/TFT/lv_conf.h:
 ../lvgl/src/draw/../misc/lv_assert.h:
 ../lvgl/src/draw/../misc/lv_log.h:
 ../lvgl/src/draw/../misc/lv_types.h:

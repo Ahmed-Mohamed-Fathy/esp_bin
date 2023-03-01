@@ -1,7 +1,7 @@
-../lvgl/src/widgets/canvas/../img/../../core/../misc/../font/../misc/lv_area.h:110:20:lv_area_copy	16	static
-../lvgl/src/widgets/canvas/../img/../../core/../misc/lv_mem.h:82:20:lv_memzero	16	static
-../lvgl/src/widgets/canvas/../img/../../core/../misc/lv_color.h:603:26:lv_color_make	16	static
-../lvgl/src/widgets/canvas/../img/../../core/../misc/lv_color.h:699:26:lv_color_white	8	static
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_area.h:110:20:lv_area_copy	16	static
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_mem.h:82:20:lv_memzero	16	static
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_color.h:603:26:lv_color_make	16	static
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_color.h:699:26:lv_color_white	8	static
 ../lvgl/src/widgets/canvas/../img/../../core/lv_obj_style_gen.h:349:26:lv_obj_get_style_img_recolor	24	static
 ../lvgl/src/widgets/canvas/lv_canvas.c:53:12:lv_canvas_create	32	static
 ../lvgl/src/widgets/canvas/lv_canvas.c:65:6:lv_canvas_set_buffer	48	static

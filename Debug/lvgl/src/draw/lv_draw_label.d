@@ -1,13 +1,13 @@
 lvgl/src/draw/lv_draw_label.o: ../lvgl/src/draw/lv_draw_label.c \
  ../lvgl/src/draw/lv_draw.h ../lvgl/src/draw/../lv_conf_internal.h \
  ../lvgl/src/draw/../lv_conf_kconfig.h \
- C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429IDISCOVERY/lv_conf.h \
+ C:/Users/user_us_4/Desktop/TFT/lv_conf.h \
  ../lvgl/src/draw/../misc/lv_style.h \
  ../lvgl/src/draw/../misc/../font/lv_font.h \
  ../lvgl/src/draw/../misc/../font/../lv_conf_internal.h \
  ../lvgl/src/draw/../misc/../font/lv_symbol_def.h \
  ../lvgl/src/draw/../misc/../font/../misc/lv_area.h \
- ../lvgl/src/draw/../misc/../font/../misc/../lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
  ../lvgl/src/draw/../misc/lv_color.h \
  ../lvgl/src/draw/../misc/../lv_conf_internal.h \
  ../lvgl/src/draw/../misc/lv_assert.h ../lvgl/src/draw/../misc/lv_log.h \
@@ -40,7 +40,7 @@ lvgl/src/draw/lv_draw_label.o: ../lvgl/src/draw/lv_draw_label.c \
  ../lvgl/src/draw/../hal/../misc/lv_timer.h \
  ../lvgl/src/draw/../hal/../misc/../lv_conf_internal.h \
  ../lvgl/src/draw/../hal/../misc/../hal/lv_hal_tick.h \
- ../lvgl/src/draw/../hal/../misc/../hal/../lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
  ../lvgl/src/draw/../hal/lv_hal_tick.h \
  ../lvgl/src/draw/../hal/../draw/lv_draw.h \
  ../lvgl/src/draw/../hal/../misc/lv_color.h \
@@ -69,13 +69,13 @@ lvgl/src/draw/lv_draw_label.o: ../lvgl/src/draw/lv_draw_label.c \
 ../lvgl/src/draw/lv_draw.h:
 ../lvgl/src/draw/../lv_conf_internal.h:
 ../lvgl/src/draw/../lv_conf_kconfig.h:
-C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429IDISCOVERY/lv_conf.h:
+C:/Users/user_us_4/Desktop/TFT/lv_conf.h:
 ../lvgl/src/draw/../misc/lv_style.h:
 ../lvgl/src/draw/../misc/../font/lv_font.h:
 ../lvgl/src/draw/../misc/../font/../lv_conf_internal.h:
 ../lvgl/src/draw/../misc/../font/lv_symbol_def.h:
 ../lvgl/src/draw/../misc/../font/../misc/lv_area.h:
-../lvgl/src/draw/../misc/../font/../misc/../lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
 ../lvgl/src/draw/../misc/lv_color.h:
 ../lvgl/src/draw/../misc/../lv_conf_internal.h:
 ../lvgl/src/draw/../misc/lv_assert.h:
@@ -123,7 +123,7 @@ C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429
 ../lvgl/src/draw/../hal/../misc/lv_timer.h:
 ../lvgl/src/draw/../hal/../misc/../lv_conf_internal.h:
 ../lvgl/src/draw/../hal/../misc/../hal/lv_hal_tick.h:
-../lvgl/src/draw/../hal/../misc/../hal/../lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
 ../lvgl/src/draw/../hal/lv_hal_tick.h:
 ../lvgl/src/draw/../hal/../draw/lv_draw.h:
 ../lvgl/src/draw/../hal/../misc/lv_color.h:

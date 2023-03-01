@@ -130,8 +130,8 @@ static HAL_StatusTypeDef  I2Cx_IsDeviceReady(uint16_t DevAddress, uint32_t Trial
 
 /* SPIx bus function */
 static void               SPIx_Init(void);
-static void               SPIx_Write(uint16_t Value);
-static uint32_t           SPIx_Read(uint8_t ReadSize);
+ void               SPIx_Write(uint16_t Value);
+ void           SPIx_Read(uint8_t *Buff,uint8_t ReadSize);
 static void               SPIx_Error(void);
 static void               SPIx_MspInit(SPI_HandleTypeDef *hspi);
 
@@ -628,8 +628,9 @@ static void SPIx_Init(void)
        - ILI9341 LCD SPI interface max baudrate is 10MHz for write and 6.66MHz for read
        - l3gd20 SPI interface max baudrate is 10MHz for write/read
        - PCLK2 frequency is set to 90 MHz
+       - We operate at 5 Mhz
     */
-    SpiHandle.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_16;
+    SpiHandle.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_64;//SPI_BAUDRATEPRESCALER_32;
 
     /* On STM32F429I-Discovery, LCD ID cannot be read then keep a common configuration */
     /* for LCD and GYRO (SPI_DIRECTION_2LINES) */
@@ -655,12 +656,11 @@ static void SPIx_Init(void)
   * @param  ReadSize: Number of bytes to read (max 4 bytes)
   * @retval Value read on the SPI
   */
-static uint32_t SPIx_Read(uint8_t ReadSize)
+ void SPIx_Read(uint8_t *Buff,uint8_t ReadSize)
 {
   HAL_StatusTypeDef status = HAL_OK;
-  uint32_t readvalue;
 
-  status = HAL_SPI_Receive(&SpiHandle, (uint8_t*) &readvalue, ReadSize, SpixTimeout);
+  status = HAL_SPI_Receive(&SpiHandle, Buff, ReadSize, SpixTimeout);
 
   /* Check the communication status */
   if(status != HAL_OK)
@@ -669,14 +669,13 @@ static uint32_t SPIx_Read(uint8_t ReadSize)
     SPIx_Error();
   }
 
-  return readvalue;
 }
 
 /**
   * @brief  Writes a byte to device.
   * @param  Value: value to be written
   */
-static void SPIx_Write(uint16_t Value)
+ void SPIx_Write(uint16_t Value)
 {
   HAL_StatusTypeDef status = HAL_OK;
 
@@ -811,25 +810,27 @@ void LCD_IO_WriteReg(uint8_t Reg)
   */
 uint32_t LCD_IO_ReadData(uint16_t RegValue, uint8_t ReadSize) 
 {
-  uint32_t readvalue = 0;
-
+//  uint32_t readvalue = 0;
+  uint8_t arr[4]={0};
   /* Select: Chip Select low */
+
   LCD_CS_LOW();
+  LCD_RDX_HIGH();
 
   /* Reset WRX to send command */
   LCD_WRX_LOW();
   
   SPIx_Write(RegValue);
-  
-  readvalue = SPIx_Read(ReadSize);
 
   /* Set WRX to send data */
   LCD_WRX_HIGH();
+  LCD_RDX_LOW();
+  SPIx_Read(arr,ReadSize);
 
   /* Deselect: Chip Select high */
   LCD_CS_HIGH();
   
-  return readvalue;
+//  return readvalue;
 }
 
 /**

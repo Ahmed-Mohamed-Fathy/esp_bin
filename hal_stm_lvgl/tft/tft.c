@@ -326,6 +326,7 @@ void HAL_LTDC_MspInit(LTDC_HandleTypeDef *hltdc)
   __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
+  __HAL_RCC_GPIOE_CLK_ENABLE();
   __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPIOG_CLK_ENABLE();
 
@@ -336,11 +337,11 @@ void HAL_LTDC_MspInit(LTDC_HandleTypeDef *hltdc)
    +                       LCD pins assignment                                   +
    +------------------------+-----------------------+----------------------------+
    |  LCD_TFT R2 <-> PC.10  |  LCD_TFT G2 <-> PA.06 |  LCD_TFT B2 <-> PD.06      |
-   |  LCD_TFT R3 <-> PB.00  |  LCD_TFT G3 <-> PG.10 |  LCD_TFT B3 <-> PG.11      |
-   |  LCD_TFT R4 <-> PA.11  |  LCD_TFT G4 <-> PB.10 |  LCD_TFT B4 <-> PG.12      |
+   |  LCD_TFT R3 <-> PB.00  |  LCD_TFT G3 <-> PE.11 |  LCD_TFT B3 <-> PD.10      |
+   |  LCD_TFT R4 <-> PA.11  |  LCD_TFT G4 <-> PB.10 |  LCD_TFT B4 <-> PE.12      |
    |  LCD_TFT R5 <-> PA.12  |  LCD_TFT G5 <-> PB.11 |  LCD_TFT B5 <-> PA.03      |
    |  LCD_TFT R6 <-> PB.01  |  LCD_TFT G6 <-> PC.07 |  LCD_TFT B6 <-> PB.08      |
-   |  LCD_TFT R7 <-> PG.06  |  LCD_TFT G7 <-> PD.03 |  LCD_TFT B7 <-> PB.09      |
+   |  LCD_TFT R7 <-> PE.15  |  LCD_TFT G7 <-> PD.03 |  LCD_TFT B7 <-> PB.09      |
    -------------------------------------------------------------------------------
             |  LCD_TFT HSYNC <-> PC.06  | LCDTFT VSYNC <->  PA.04 |
             |  LCD_TFT CLK   <-> PG.07  | LCD_TFT DE   <->  PF.10 |
@@ -366,17 +367,17 @@ void HAL_LTDC_MspInit(LTDC_HandleTypeDef *hltdc)
   GPIO_Init_Structure.Pin = GPIO_PIN_6 | GPIO_PIN_7 | GPIO_PIN_10;
   HAL_GPIO_Init(GPIOC, &GPIO_Init_Structure);
 
-  /* LTDC pins configuraiton: PD3 -- 6 */
-  GPIO_Init_Structure.Pin = GPIO_PIN_3 | GPIO_PIN_6;
+  /* LTDC pins configuraiton: PD3 -- 6 --10*/
+  GPIO_Init_Structure.Pin = GPIO_PIN_3 | GPIO_PIN_6 | GPIO_PIN_10;
   HAL_GPIO_Init(GPIOD, &GPIO_Init_Structure);
 
   /* LTDC pins configuraiton: PF10 */
   GPIO_Init_Structure.Pin = GPIO_PIN_10;
   HAL_GPIO_Init(GPIOF, &GPIO_Init_Structure);
 
-  /* LTDC pins configuraiton: PG6 -- 11 */
-  GPIO_Init_Structure.Pin = GPIO_PIN_6 | GPIO_PIN_7 | \
-                             GPIO_PIN_11;
+  /* LTDC pins configuraiton: PG7 */
+  GPIO_Init_Structure.Pin =  GPIO_PIN_7;
+
   HAL_GPIO_Init(GPIOG, &GPIO_Init_Structure);
 
   /* LTDC pins configuraiton: PB0 -- 1 */
@@ -384,17 +385,16 @@ void HAL_LTDC_MspInit(LTDC_HandleTypeDef *hltdc)
   GPIO_Init_Structure.Alternate = GPIO_AF9_LTDC;
   HAL_GPIO_Init(GPIOB, &GPIO_Init_Structure);
 
-  /* LTDC pins configuraiton: PG10 -- 12 */
-  GPIO_Init_Structure.Pin = GPIO_PIN_10 | GPIO_PIN_12;
-  HAL_GPIO_Init(GPIOG, &GPIO_Init_Structure);
+/* LTDC pins configuraiton: PE 11,12,15 */
+  GPIO_Init_Structure.Pin = GPIO_PIN_11 | GPIO_PIN_12 | GPIO_PIN_15 ;
 
+  HAL_GPIO_Init(GPIOE, &GPIO_Init_Structure);
   /* Set LTDC Interrupt to the lowest priority */
   HAL_NVIC_SetPriority(LTDC_IRQn, 0xE, 0);
 
   /* Enable LTDC Interrupt */
   HAL_NVIC_EnableIRQ(LTDC_IRQn);
 }
-
 /**
   * @brief LTDC MSP De-Initialization
   *        This function frees the hardware resources used in this example:

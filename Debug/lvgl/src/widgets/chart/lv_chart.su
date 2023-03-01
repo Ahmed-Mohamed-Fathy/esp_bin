@@ -1,4 +1,4 @@
-../lvgl/src/widgets/chart/../../../src/hal/../draw/../misc/../font/../misc/lv_area.h:110:20:lv_area_copy	16	static
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_area.h:110:20:lv_area_copy	16	static
 ../lvgl/src/widgets/chart/../../../src/core/lv_obj_style_gen.h:1:26:lv_obj_get_style_width	24	static
 ../lvgl/src/widgets/chart/../../../src/core/lv_obj_style_gen.h:19:26:lv_obj_get_style_height	24	static
 ../lvgl/src/widgets/chart/../../../src/core/lv_obj_style_gen.h:103:26:lv_obj_get_style_pad_top	24	static

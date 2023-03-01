@@ -1,5 +1,5 @@
-../lvgl/src/core/../draw/../misc/../font/../misc/lv_area.h:123:26:lv_area_get_width	16	static
-../lvgl/src/core/../draw/../misc/../font/../misc/lv_area.h:133:26:lv_area_get_height	16	static
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_area.h:123:26:lv_area_get_width	16	static
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_area.h:133:26:lv_area_get_height	16	static
 ../lvgl/src/core/../draw/../misc/lv_mem.h:82:20:lv_memzero	16	static
 ../lvgl/src/core/lv_obj_style_gen.h:55:26:lv_obj_get_style_transform_width	24	static
 ../lvgl/src/core/lv_obj_style_gen.h:61:26:lv_obj_get_style_transform_height	24	static

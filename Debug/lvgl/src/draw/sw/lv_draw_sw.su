@@ -1,4 +1,4 @@
-../lvgl/src/draw/sw/../../misc/../font/../misc/lv_area.h:123:26:lv_area_get_width	16	static
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_area.h:123:26:lv_area_get_width	16	static
 ../lvgl/src/draw/sw/../../misc/lv_mem.h:82:20:lv_memzero	16	static
 ../lvgl/src/draw/sw/../../misc/lv_color.h:390:24:lv_color_to32	24	static
 ../lvgl/src/draw/sw/../../misc/lv_color.h:595:23:lv_color_brightness	24	static

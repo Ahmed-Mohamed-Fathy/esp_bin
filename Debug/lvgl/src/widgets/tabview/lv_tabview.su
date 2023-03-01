@@ -1,6 +1,6 @@
-../lvgl/src/widgets/tabview/../../../src/core/lv_obj_style_gen.h:127:26:lv_obj_get_style_pad_row	24	static
-../lvgl/src/widgets/tabview/../../../src/core/lv_obj_style_gen.h:133:26:lv_obj_get_style_pad_column	24	static
-../lvgl/src/widgets/tabview/../../../src/core/lv_obj_style_gen.h:559:29:lv_obj_get_style_base_dir	24	static
+c:\users\user_us_4\desktop\tft\lvgl\src/core/lv_obj_style_gen.h:127:26:lv_obj_get_style_pad_row	24	static
+c:\users\user_us_4\desktop\tft\lvgl\src/core/lv_obj_style_gen.h:133:26:lv_obj_get_style_pad_column	24	static
+c:\users\user_us_4\desktop\tft\lvgl\src/core/lv_obj_style_gen.h:559:29:lv_obj_get_style_base_dir	24	static
 ../lvgl/src/widgets/tabview/lv_tabview.c:56:12:lv_tabview_create	32	static
 ../lvgl/src/widgets/tabview/lv_tabview.c:67:12:lv_tabview_add_tab	56	static
 ../lvgl/src/widgets/tabview/lv_tabview.c:123:6:lv_tabview_rename_tab	40	static

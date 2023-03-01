@@ -1,6 +1,6 @@
-../lvgl/src/widgets/bar/../../core/../misc/../font/../misc/lv_area.h:110:20:lv_area_copy	16	static
-../lvgl/src/widgets/bar/../../core/../misc/../font/../misc/lv_area.h:123:26:lv_area_get_width	16	static
-../lvgl/src/widgets/bar/../../core/../misc/../font/../misc/lv_area.h:133:26:lv_area_get_height	16	static
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_area.h:110:20:lv_area_copy	16	static
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_area.h:123:26:lv_area_get_width	16	static
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_area.h:133:26:lv_area_get_height	16	static
 ../lvgl/src/widgets/bar/../../core/../misc/lv_anim.h:127:20:lv_anim_set_var	16	static
 ../lvgl/src/widgets/bar/../../core/../misc/lv_anim.h:139:20:lv_anim_set_exec_cb	16	static
 ../lvgl/src/widgets/bar/../../core/../misc/lv_anim.h:149:20:lv_anim_set_time	16	static

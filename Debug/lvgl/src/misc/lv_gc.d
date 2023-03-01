@@ -1,10 +1,9 @@
 lvgl/src/misc/lv_gc.o: ../lvgl/src/misc/lv_gc.c ../lvgl/src/misc/lv_gc.h \
  ../lvgl/src/misc/../lv_conf_internal.h \
  ../lvgl/src/misc/../lv_conf_kconfig.h \
- C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429IDISCOVERY/lv_conf.h \
- ../lvgl/src/misc/lv_mem.h ../lvgl/src/misc/lv_types.h \
- ../lvgl/src/misc/lv_ll.h ../lvgl/src/misc/lv_timer.h \
- ../lvgl/src/misc/../hal/lv_hal_tick.h \
+ C:/Users/user_us_4/Desktop/TFT/lv_conf.h ../lvgl/src/misc/lv_mem.h \
+ ../lvgl/src/misc/lv_types.h ../lvgl/src/misc/lv_ll.h \
+ ../lvgl/src/misc/lv_timer.h ../lvgl/src/misc/../hal/lv_hal_tick.h \
  ../lvgl/src/misc/../hal/../lv_conf_internal.h \
  ../lvgl/src/misc/../draw/lv_img_cache.h \
  ../lvgl/src/misc/../draw/lv_img_decoder.h \
@@ -27,7 +26,7 @@ lvgl/src/misc/lv_gc.o: ../lvgl/src/misc/lv_gc.c ../lvgl/src/misc/lv_gc.h \
 ../lvgl/src/misc/lv_gc.h:
 ../lvgl/src/misc/../lv_conf_internal.h:
 ../lvgl/src/misc/../lv_conf_kconfig.h:
-C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429IDISCOVERY/lv_conf.h:
+C:/Users/user_us_4/Desktop/TFT/lv_conf.h:
 ../lvgl/src/misc/lv_mem.h:
 ../lvgl/src/misc/lv_types.h:
 ../lvgl/src/misc/lv_ll.h:

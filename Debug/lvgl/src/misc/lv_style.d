@@ -2,7 +2,7 @@ lvgl/src/misc/lv_style.o: ../lvgl/src/misc/lv_style.c \
  ../lvgl/src/misc/lv_style.h ../lvgl/src/misc/../font/lv_font.h \
  ../lvgl/src/misc/../font/../lv_conf_internal.h \
  ../lvgl/src/misc/../font/../lv_conf_kconfig.h \
- C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429IDISCOVERY/lv_conf.h \
+ C:/Users/user_us_4/Desktop/TFT/lv_conf.h \
  ../lvgl/src/misc/../font/lv_symbol_def.h \
  ../lvgl/src/misc/../font/../misc/lv_area.h \
  ../lvgl/src/misc/../font/../misc/../lv_conf_internal.h \
@@ -26,7 +26,7 @@ lvgl/src/misc/lv_style.o: ../lvgl/src/misc/lv_style.c \
  ../lvgl/src/misc/../misc/../draw/../misc/lv_color.h \
  ../lvgl/src/misc/../misc/../draw/../misc/lv_area.h \
  ../lvgl/src/misc/../misc/../draw/../misc/lv_fs.h \
- ../lvgl/src/misc/../misc/../draw/../misc/../lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
  ../lvgl/src/misc/../misc/../draw/../misc/lv_types.h \
  ../lvgl/src/misc/../misc/../draw/lv_draw_mask.h \
  ../lvgl/src/misc/../misc/../draw/../misc/lv_math.h \
@@ -37,7 +37,7 @@ lvgl/src/misc/lv_style.o: ../lvgl/src/misc/lv_style.c \
 ../lvgl/src/misc/../font/lv_font.h:
 ../lvgl/src/misc/../font/../lv_conf_internal.h:
 ../lvgl/src/misc/../font/../lv_conf_kconfig.h:
-C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429IDISCOVERY/lv_conf.h:
+C:/Users/user_us_4/Desktop/TFT/lv_conf.h:
 ../lvgl/src/misc/../font/lv_symbol_def.h:
 ../lvgl/src/misc/../font/../misc/lv_area.h:
 ../lvgl/src/misc/../font/../misc/../lv_conf_internal.h:
@@ -69,7 +69,7 @@ C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429
 ../lvgl/src/misc/../misc/../draw/../misc/lv_color.h:
 ../lvgl/src/misc/../misc/../draw/../misc/lv_area.h:
 ../lvgl/src/misc/../misc/../draw/../misc/lv_fs.h:
-../lvgl/src/misc/../misc/../draw/../misc/../lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
 ../lvgl/src/misc/../misc/../draw/../misc/lv_types.h:
 ../lvgl/src/misc/../misc/../draw/lv_draw_mask.h:
 ../lvgl/src/misc/../misc/../draw/../misc/lv_math.h:

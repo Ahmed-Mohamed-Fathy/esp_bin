@@ -49,7 +49,7 @@ ClockAlarmUI ClockAlarmUI_inst;
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-extern uint16_t const my_fb[TFT_HOR_RES * TFT_VER_RES];
+//extern uint16_t const my_fb[TFT_HOR_RES * TFT_VER_RES];
 extern LTDC_HandleTypeDef LtdcHandle;
 
 /* USER CODE END PV */
@@ -79,16 +79,20 @@ static void LTDC_Clock_Init(void)
 	  Error_Handler();
 	}
 }
+lv_obj_t * ta;
 void lv_textarea_1(void)
 {
-	lv_obj_t * ta;
     ta = lv_textarea_create(lv_scr_act());
     lv_textarea_set_one_line(ta, true);
-    lv_obj_set_style_bg_color(lv_scr_act(), lv_color_hex(0x00FF00), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(lv_scr_act(), lv_color_hex(0xFF0000), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_textarea_set_text(ta, "Hello world");
 
     lv_obj_align(ta, LV_ALIGN_CENTER, 0, 10);
-    lv_textarea_set_text(ta, "Hello world");
+    HAL_Delay(5);
 }
+
+volatile uint32_t Statusdata;
+
 /* USER CODE END 0 */
 
 /**
@@ -109,13 +113,32 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+  /* Reset HSEONbit */
+ RCC->CR &=~ (1<<16);
+//     /* Reset HSEBYP bit */
+ RCC->CR &= (uint32_t)0xFFFBFFFF;
   /* USER CODE END Init */
 
   /* Configure the system clock */
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
+  __HAL_RCC_GPIOA_CLK_ENABLE();
+
+  /*Configure GPIO pin : LTDC_NRST_Pin */
+  GPIO_InitStruct.Pin = LTDC_NRST_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(LTDC_NRST_GPIO_Port, &GPIO_InitStruct);
+
+HAL_GPIO_WritePin(LTDC_NRST_GPIO_Port, LTDC_NRST_Pin, 1);
+HAL_Delay(100);
+HAL_GPIO_WritePin(LTDC_NRST_GPIO_Port, LTDC_NRST_Pin, 0);
+HAL_Delay(100);
+HAL_GPIO_WritePin(LTDC_NRST_GPIO_Port, LTDC_NRST_Pin, 1);
+
+
 
   LTDC_Clock_Init();
 
@@ -126,6 +149,8 @@ int main(void)
 
   lv_init();
   tft_init();
+  Statusdata= ili9341_ReadData(0x09,4);
+
   touchpad_init();
   lv_disp_set_rotation(lv_disp_get_default(), LV_DISP_ROT_90);
   /* USER CODE BEGIN 2 */
@@ -162,6 +187,8 @@ int main(void)
 	  HAL_Delay(5);
 	  lv_timer_handler();
 	  char *text = lv_textarea_get_text(ta);
+	  Statusdata= ili9341_ReadData(0x09,4);
+	  ili9341_ReadData(0x54,2);
 
   }
   /* USER CODE END 3 */
@@ -184,11 +211,10 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
-  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLM = 8;
   RCC_OscInitStruct.PLL.PLLN = 180;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;

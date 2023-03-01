@@ -3,7 +3,7 @@
 ../hal_stm_lvgl/tft/tft.c:158:13:tft_flush	48	static
 ../hal_stm_lvgl/tft/tft.c:192:13:LCD_Config	64	static
 ../hal_stm_lvgl/tft/tft.c:301:6:LTDC_IRQHandler	8	static
-../hal_stm_lvgl/tft/tft.c:316:6:HAL_LTDC_MspInit	64	static
+../hal_stm_lvgl/tft/tft.c:316:6:HAL_LTDC_MspInit	72	static
 ../hal_stm_lvgl/tft/tft.c:405:6:HAL_LTDC_MspDeInit	16	static
 ../hal_stm_lvgl/tft/tft.c:683:13:DMA_Config	16	static
 ../hal_stm_lvgl/tft/tft.c:726:13:DMA_TransferComplete	16	static

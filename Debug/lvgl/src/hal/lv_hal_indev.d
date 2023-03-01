@@ -2,7 +2,7 @@ lvgl/src/hal/lv_hal_indev.o: ../lvgl/src/hal/lv_hal_indev.c \
  ../lvgl/src/hal/../misc/lv_assert.h \
  ../lvgl/src/hal/../misc/../lv_conf_internal.h \
  ../lvgl/src/hal/../misc/../lv_conf_kconfig.h \
- C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429IDISCOVERY/lv_conf.h \
+ C:/Users/user_us_4/Desktop/TFT/lv_conf.h \
  ../lvgl/src/hal/../misc/lv_log.h ../lvgl/src/hal/../misc/lv_types.h \
  ../lvgl/src/hal/../misc/lv_mem.h ../lvgl/src/hal/../hal/lv_hal_indev.h \
  ../lvgl/src/hal/../hal/../lv_conf_internal.h \
@@ -10,14 +10,14 @@ lvgl/src/hal/lv_hal_indev.o: ../lvgl/src/hal/lv_hal_indev.c \
  ../lvgl/src/hal/../hal/../misc/../lv_conf_internal.h \
  ../lvgl/src/hal/../hal/../misc/lv_timer.h \
  ../lvgl/src/hal/../hal/../misc/../hal/lv_hal_tick.h \
- ../lvgl/src/hal/../hal/../misc/../hal/../lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
  ../lvgl/src/hal/../core/lv_indev.h ../lvgl/src/hal/../core/lv_obj.h \
  ../lvgl/src/hal/../core/../lv_conf_internal.h \
  ../lvgl/src/hal/../core/../misc/lv_style.h \
  ../lvgl/src/hal/../core/../misc/../font/lv_font.h \
- ../lvgl/src/hal/../core/../misc/../font/../lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
  ../lvgl/src/hal/../core/../misc/../font/lv_symbol_def.h \
- ../lvgl/src/hal/../core/../misc/../font/../misc/lv_area.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_area.h \
  ../lvgl/src/hal/../core/../misc/lv_color.h \
  ../lvgl/src/hal/../core/../misc/../lv_conf_internal.h \
  ../lvgl/src/hal/../core/../misc/lv_assert.h \
@@ -37,32 +37,32 @@ lvgl/src/hal/lv_hal_indev.o: ../lvgl/src/hal/lv_hal_indev.c \
  ../lvgl/src/hal/../core/../hal/lv_hal_disp.h \
  ../lvgl/src/hal/../core/../hal/lv_hal.h \
  ../lvgl/src/hal/../core/../hal/../draw/lv_draw.h \
- ../lvgl/src/hal/../core/../hal/../draw/../lv_conf_internal.h \
- ../lvgl/src/hal/../core/../hal/../draw/../misc/lv_style.h \
- ../lvgl/src/hal/../core/../hal/../draw/../misc/lv_txt.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_style.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_txt.h \
  ../lvgl/src/hal/../core/../hal/../draw/lv_img_decoder.h \
  ../lvgl/src/hal/../core/../hal/../draw/lv_img_buf.h \
- ../lvgl/src/hal/../core/../hal/../draw/../misc/lv_color.h \
- ../lvgl/src/hal/../core/../hal/../draw/../misc/lv_area.h \
- ../lvgl/src/hal/../core/../hal/../draw/../misc/lv_fs.h \
- ../lvgl/src/hal/../core/../hal/../draw/../misc/../lv_conf_internal.h \
- ../lvgl/src/hal/../core/../hal/../draw/../misc/lv_types.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_color.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_area.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_fs.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_types.h \
  ../lvgl/src/hal/../core/../hal/../draw/lv_img_cache.h \
  ../lvgl/src/hal/../core/../hal/../draw/lv_draw_rect.h \
  ../lvgl/src/hal/../core/../hal/../draw/sw/lv_draw_sw_gradient.h \
  ../lvgl/src/hal/../core/../hal/../draw/sw/lv_draw_sw_dither.h \
- ../lvgl/src/hal/../core/../hal/../draw/sw/../../core/lv_obj_pos.h \
- ../lvgl/src/hal/../core/../hal/../draw/sw/../../core/../misc/lv_area.h \
- ../lvgl/src/hal/../core/../hal/../draw/sw/../../misc/lv_color.h \
- ../lvgl/src/hal/../core/../hal/../draw/sw/../../misc/lv_style.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj_pos.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_area.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_color.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_style.h \
  ../lvgl/src/hal/../core/../hal/../draw/lv_draw_label.h \
- ../lvgl/src/hal/../core/../hal/../draw/../misc/lv_bidi.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_bidi.h \
  ../lvgl/src/hal/../core/../hal/../draw/lv_draw_img.h \
  ../lvgl/src/hal/../core/../hal/../draw/lv_draw_line.h \
  ../lvgl/src/hal/../core/../hal/../draw/lv_draw_triangle.h \
  ../lvgl/src/hal/../core/../hal/../draw/lv_draw_arc.h \
  ../lvgl/src/hal/../core/../hal/../draw/lv_draw_mask.h \
- ../lvgl/src/hal/../core/../hal/../draw/../misc/lv_math.h \
+ c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_math.h \
  ../lvgl/src/hal/../core/../hal/../draw/lv_draw_transform.h \
  ../lvgl/src/hal/../core/../hal/../draw/lv_draw_layer.h \
  ../lvgl/src/hal/../core/../hal/../misc/lv_color.h \
@@ -93,7 +93,7 @@ lvgl/src/hal/lv_hal_indev.o: ../lvgl/src/hal/lv_hal_indev.c \
 ../lvgl/src/hal/../misc/lv_assert.h:
 ../lvgl/src/hal/../misc/../lv_conf_internal.h:
 ../lvgl/src/hal/../misc/../lv_conf_kconfig.h:
-C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429IDISCOVERY/lv_conf.h:
+C:/Users/user_us_4/Desktop/TFT/lv_conf.h:
 ../lvgl/src/hal/../misc/lv_log.h:
 ../lvgl/src/hal/../misc/lv_types.h:
 ../lvgl/src/hal/../misc/lv_mem.h:
@@ -103,15 +103,15 @@ C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429
 ../lvgl/src/hal/../hal/../misc/../lv_conf_internal.h:
 ../lvgl/src/hal/../hal/../misc/lv_timer.h:
 ../lvgl/src/hal/../hal/../misc/../hal/lv_hal_tick.h:
-../lvgl/src/hal/../hal/../misc/../hal/../lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
 ../lvgl/src/hal/../core/lv_indev.h:
 ../lvgl/src/hal/../core/lv_obj.h:
 ../lvgl/src/hal/../core/../lv_conf_internal.h:
 ../lvgl/src/hal/../core/../misc/lv_style.h:
 ../lvgl/src/hal/../core/../misc/../font/lv_font.h:
-../lvgl/src/hal/../core/../misc/../font/../lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
 ../lvgl/src/hal/../core/../misc/../font/lv_symbol_def.h:
-../lvgl/src/hal/../core/../misc/../font/../misc/lv_area.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_area.h:
 ../lvgl/src/hal/../core/../misc/lv_color.h:
 ../lvgl/src/hal/../core/../misc/../lv_conf_internal.h:
 ../lvgl/src/hal/../core/../misc/lv_assert.h:
@@ -131,32 +131,32 @@ C:/Users/quant5/Desktop/EmbeddedGraphicsLVGL-MCU3-main/004_ClockAlarmUI/1_32F429
 ../lvgl/src/hal/../core/../hal/lv_hal_disp.h:
 ../lvgl/src/hal/../core/../hal/lv_hal.h:
 ../lvgl/src/hal/../core/../hal/../draw/lv_draw.h:
-../lvgl/src/hal/../core/../hal/../draw/../lv_conf_internal.h:
-../lvgl/src/hal/../core/../hal/../draw/../misc/lv_style.h:
-../lvgl/src/hal/../core/../hal/../draw/../misc/lv_txt.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_style.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_txt.h:
 ../lvgl/src/hal/../core/../hal/../draw/lv_img_decoder.h:
 ../lvgl/src/hal/../core/../hal/../draw/lv_img_buf.h:
-../lvgl/src/hal/../core/../hal/../draw/../misc/lv_color.h:
-../lvgl/src/hal/../core/../hal/../draw/../misc/lv_area.h:
-../lvgl/src/hal/../core/../hal/../draw/../misc/lv_fs.h:
-../lvgl/src/hal/../core/../hal/../draw/../misc/../lv_conf_internal.h:
-../lvgl/src/hal/../core/../hal/../draw/../misc/lv_types.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_color.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_area.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_fs.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\lv_conf_internal.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_types.h:
 ../lvgl/src/hal/../core/../hal/../draw/lv_img_cache.h:
 ../lvgl/src/hal/../core/../hal/../draw/lv_draw_rect.h:
 ../lvgl/src/hal/../core/../hal/../draw/sw/lv_draw_sw_gradient.h:
 ../lvgl/src/hal/../core/../hal/../draw/sw/lv_draw_sw_dither.h:
-../lvgl/src/hal/../core/../hal/../draw/sw/../../core/lv_obj_pos.h:
-../lvgl/src/hal/../core/../hal/../draw/sw/../../core/../misc/lv_area.h:
-../lvgl/src/hal/../core/../hal/../draw/sw/../../misc/lv_color.h:
-../lvgl/src/hal/../core/../hal/../draw/sw/../../misc/lv_style.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\core\lv_obj_pos.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_area.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_color.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_style.h:
 ../lvgl/src/hal/../core/../hal/../draw/lv_draw_label.h:
-../lvgl/src/hal/../core/../hal/../draw/../misc/lv_bidi.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_bidi.h:
 ../lvgl/src/hal/../core/../hal/../draw/lv_draw_img.h:
 ../lvgl/src/hal/../core/../hal/../draw/lv_draw_line.h:
 ../lvgl/src/hal/../core/../hal/../draw/lv_draw_triangle.h:
 ../lvgl/src/hal/../core/../hal/../draw/lv_draw_arc.h:
 ../lvgl/src/hal/../core/../hal/../draw/lv_draw_mask.h:
-../lvgl/src/hal/../core/../hal/../draw/../misc/lv_math.h:
+c:\users\user_us_4\desktop\tft\lvgl\src\misc\lv_math.h:
 ../lvgl/src/hal/../core/../hal/../draw/lv_draw_transform.h:
 ../lvgl/src/hal/../core/../hal/../draw/lv_draw_layer.h:
 ../lvgl/src/hal/../core/../hal/../misc/lv_color.h:
