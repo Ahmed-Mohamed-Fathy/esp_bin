@@ -174,6 +174,8 @@ void   MX_SPI5_Init(void);
 #define I2C3_SDA_GPIO_Port GPIOC
 #define I2C3_SCL_Pin GPIO_PIN_8
 #define I2C3_SCL_GPIO_Port GPIOA
+#define TP_INT_Pin GPIO_PIN_9
+#define TP_INT_GPIO_Port GPIOA
 #define R4_Pin GPIO_PIN_11
 #define R4_GPIO_Port GPIOA
 #define R5_Pin GPIO_PIN_12

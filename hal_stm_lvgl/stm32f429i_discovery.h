@@ -212,8 +212,8 @@ typedef enum
 #define STMPE811_INT_GPIO_PORT                  GPIOA
 #define STMPE811_INT_CLK_ENABLE()               __HAL_RCC_GPIOA_CLK_ENABLE()
 #define STMPE811_INT_CLK_DISABLE()              __HAL_RCC_GPIOA_CLK_DISABLE()
-#define STMPE811_INT_EXTI                       EXTI15_10_IRQn
-#define STMPE811_INT_EXTIHandler                EXTI15_10_IRQHandler
+#define STMPE811_INT_EXTI                       EXTI9_5_IRQn
+#define STMPE811_INT_EXTIHandler                EXTI9_5_IRQHandler
 
 /*################################ LCD #######################################*/
 /* Chip Select macro definition */

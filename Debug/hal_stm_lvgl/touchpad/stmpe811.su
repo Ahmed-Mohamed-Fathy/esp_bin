@@ -1,7 +1,6 @@
-../hal_stm_lvgl/touchpad/stmpe811.c:48:6:stmpe811_Init	16	static
-../hal_stm_lvgl/touchpad/stmpe811.c:64:6:stmpe811_Reset	16	static
-../hal_stm_lvgl/touchpad/stmpe811.c:88:6:stmpe811_IO_DisableAF	24	static
-../hal_stm_lvgl/touchpad/stmpe811.c:111:6:stmpe811_IO_EnableAF	24	static
-../hal_stm_lvgl/touchpad/stmpe811.c:130:6:stmpe811_TS_Start	24	static
-../hal_stm_lvgl/touchpad/stmpe811.c:205:9:stmpe811_TS_DetectTouch	24	static
-../hal_stm_lvgl/touchpad/stmpe811.c:237:6:stmpe811_TS_GetXY	32	static
+../hal_stm_lvgl/touchpad/stmpe811.c:60:6:TSC2007_Init	16	static
+../hal_stm_lvgl/touchpad/stmpe811.c:91:6:TSC2007_Reset	16	static
+../hal_stm_lvgl/touchpad/stmpe811.c:220:6:TSC2007_TS_Start	16	static
+../hal_stm_lvgl/touchpad/stmpe811.c:255:6:TSC2007_TS_DetectTouch	16	static
+../hal_stm_lvgl/touchpad/stmpe811.c:289:10:Reverse16	16	static
+../hal_stm_lvgl/touchpad/stmpe811.c:301:6:TSC2007_TS_GetXY	32	static

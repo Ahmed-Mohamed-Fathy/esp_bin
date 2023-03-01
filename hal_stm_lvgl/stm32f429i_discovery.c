@@ -911,6 +911,7 @@ uint16_t IOE_ReadMultiple(uint8_t Addr, uint8_t Reg, uint8_t *pBuffer, uint16_t 
  return I2Cx_ReadBuffer(Addr, Reg, pBuffer, Length);
 }
 
+
 /**
   * @brief  IOE Delay.
   * @param  Delay in ms

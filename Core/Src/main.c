@@ -93,6 +93,18 @@ void lv_textarea_1(void)
 
 volatile uint32_t Statusdata;
 
+extern volatile  bool detected;
+
+// External Interrupt ISR Handler CallBackFun
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+    if(GPIO_Pin == GPIO_PIN_9) // INT Source is pin A9
+    {
+    	detected = true;
+    	__NOP();
+    }
+}
+
 /* USER CODE END 0 */
 
 /**
@@ -125,6 +137,16 @@ int main(void)
   /* USER CODE BEGIN SysInit */
   GPIO_InitTypeDef GPIO_InitStruct = {0};
   __HAL_RCC_GPIOA_CLK_ENABLE();
+
+  /*Configure GPIO pin : TP_INT_Pin */
+  GPIO_InitStruct.Pin = TP_INT_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(TP_INT_GPIO_Port, &GPIO_InitStruct);
+
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
 
   /*Configure GPIO pin : LTDC_NRST_Pin */
   GPIO_InitStruct.Pin = LTDC_NRST_Pin;

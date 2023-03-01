@@ -31,7 +31,7 @@ static uint32_t lv_timer_time_remaining(lv_timer_t * timer);
 /**********************
  *  STATIC VARIABLES
  **********************/
-static bool lv_timer_run = false;
+static uint8_t lv_timer_run = 0;
 static uint8_t idle_last = 0;
 static bool timer_deleted;
 static bool timer_created;
@@ -76,7 +76,7 @@ LV_ATTRIBUTE_TIMER_HANDLER uint32_t lv_timer_handler(void)
     }
     already_running = true;
 
-    if(lv_timer_run == false) {
+    if(lv_timer_run == 0) {
         already_running = false; /*Release mutex*/
         return 1;
     }
@@ -265,7 +265,7 @@ void lv_timer_reset(lv_timer_t * timer)
  */
 void lv_timer_enable(bool en)
 {
-    lv_timer_run = en;
+    lv_timer_run = 1;
 }
 
 /**

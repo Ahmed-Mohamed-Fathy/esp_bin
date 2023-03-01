@@ -46,7 +46,7 @@
    
 /* Includes ------------------------------------------------------------------*/
 #include <stdint.h>
-
+#include "stdbool.h"
 /** @addtogroup BSP
   * @{
   */ 
@@ -193,7 +193,18 @@
 /* TS registers masks */
 #define STMPE811_TS_CTRL_ENABLE         0x01  
 #define STMPE811_TS_CTRL_STATUS         0x80
-/**
+
+ /* I2C Addresses */
+#define I2C_WRITE_ADDRESS  0x90
+#define I2C_READ_ADDRESS   0x91
+
+ /* Commands */
+
+#define SETUP_CMD   		 0xB0  // Power Off - MAV filter on - 50K resistance on interrupt pin
+#define TOUCH_AD_ON_CMD    	 0xA4  // Power Off - MAV filter on - 50K resistance on interrupt pin
+#define TSC2007_MEASURE_X    0xC4
+#define TSC2007_MEASURE_Y    0xD4
+ /**
   * @}
   */ 
    
@@ -214,6 +225,8 @@
 void     stmpe811_Init(uint16_t DeviceAddr);
 void     stmpe811_Reset(uint16_t DeviceAddr);
 
+void     TSC2007_Init(uint16_t DeviceAddr);
+void     TSC2007_Reset(uint16_t DeviceAddr);
 /** 
   * @brief STMPE811 IO functionalities functions
   */
@@ -229,10 +242,16 @@ void     stmpe811_TS_Start(uint16_t DeviceAddr);
 uint8_t  stmpe811_TS_DetectTouch(uint16_t DeviceAddr);
 void     stmpe811_TS_GetXY(uint16_t DeviceAddr, uint16_t *X, uint16_t *Y);
 
+
+void     TSC2007_TS_Start(uint16_t DeviceAddr);
+bool	 TSC2007_TS_DetectTouch(uint16_t DeviceAddr);
+void     TSC2007_TS_GetXY(uint16_t DeviceAddr, uint16_t *X, uint16_t *Y);
+
+
 void     IOE_Init(void);
 void     IOE_ITConfig (void);
 void     IOE_Delay(uint32_t delay);
-void     IOE_Write(uint8_t addr, uint8_t reg, uint8_t value);
+void     IOE_Write(uint8_t addr, uint8_t Data);
 uint8_t  IOE_Read(uint8_t addr, uint8_t reg);
 uint16_t IOE_ReadMultiple(uint8_t addr, uint8_t reg, uint8_t *buffer, uint16_t length);
 

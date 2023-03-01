@@ -44,8 +44,8 @@ static bool touchpad_get_xy(int16_t *x, int16_t *y);
  */
 void touchpad_init(void)
 {
-  stmpe811_Init(TS_I2C_ADDRESS);
-  stmpe811_TS_Start(TS_I2C_ADDRESS);
+	TSC2007_Init(TS_I2C_ADDRESS);
+	TSC2007_Reset(TS_I2C_ADDRESS);
 
   static lv_indev_drv_t indev_drv;
   lv_indev_drv_init(&indev_drv);
@@ -90,6 +90,7 @@ static bool touchpad_read(lv_indev_drv_t * drv, lv_indev_data_t *data)
 	return false;
 }
 
+volatile bool detected=false ;
 
 static bool touchpad_get_xy(int16_t *x, int16_t *y)
 {
@@ -97,13 +98,13 @@ static bool touchpad_get_xy(int16_t *x, int16_t *y)
 	int16_t xDiff, yDiff, xr, yr;
 	uint16_t x_raw, y_raw;;
 
-	bool detected;
-	detected = stmpe811_TS_DetectTouch(TS_I2C_ADDRESS);
+	uint8_t fdetected = TSC2007_TS_DetectTouch(TS_I2C_ADDRESS);
 
-	if(!detected) return false;
+	if(!fdetected) return false;
 
+	detected = false ;
 
-	stmpe811_TS_GetXY(TS_I2C_ADDRESS, &x_raw, &y_raw);
+	TSC2007_TS_GetXY(TS_I2C_ADDRESS, &x_raw, &y_raw);
 
 	/* Y value first correction */
 	y_raw -= 360;

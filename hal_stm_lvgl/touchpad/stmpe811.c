@@ -39,192 +39,227 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stmpe811.h"
 
-
+extern uint8_t Sleep_Out_Flag;
 /**
   * @brief  Initialize the stmpe811 and configure the needed hardware resources
   * @param  DeviceAddr: Device address on communication Bus.
   * @retval None
   */
-void stmpe811_Init(uint16_t DeviceAddr)
+//void stmpe811_Init(uint16_t DeviceAddr)
+//{
+//
+//  /* Initialize IO BUS layer */
+//  IOE_Init();
+//
+//  /* Generate stmpe811 Software reset */
+//  stmpe811_Reset(DeviceAddr);
+//
+//}
+//
+
+void TSC2007_Init(uint16_t DeviceAddr)
 {
 
   /* Initialize IO BUS layer */
   IOE_Init();
-  
+
   /* Generate stmpe811 Software reset */
-  stmpe811_Reset(DeviceAddr);
-  
+  TSC2007_Reset(DeviceAddr);
+
 }
- 
+
+//void stmpe811_Reset(uint16_t DeviceAddr)
+//{
+//  /* Power Down the stmpe811 */
+//  IOE_Write(DeviceAddr, STMPE811_REG_SYS_CTRL1, 2);
+//
+//  /* Wait for a delay to ensure registers erasing */
+//  IOE_Delay(10);
+//
+//  /* Power On the Codec after the power off => all registers are reinitialized */
+//  IOE_Write(DeviceAddr, STMPE811_REG_SYS_CTRL1, 0);
+//
+//  /* Wait for a delay to ensure registers erasing */
+//  IOE_Delay(2);
+//}
+
 /**
-  * @brief  Reset the stmpe811 by Software.
+  * @brief  Reset the TSC2007 by Software.
   * @param  DeviceAddr: Device address on communication Bus.  
   * @retval None
   */
-void stmpe811_Reset(uint16_t DeviceAddr)
+void TSC2007_Reset(uint16_t DeviceAddr)
 {
-  /* Power Down the stmpe811 */  
-  IOE_Write(DeviceAddr, STMPE811_REG_SYS_CTRL1, 2);
+  /* Power Down the stmpe811 */
+  IOE_Write(DeviceAddr, SETUP_CMD);
 
   /* Wait for a delay to ensure registers erasing */
-  IOE_Delay(10); 
-  
-  /* Power On the Codec after the power off => all registers are reinitialized */
-  IOE_Write(DeviceAddr, STMPE811_REG_SYS_CTRL1, 0);
-  
-  /* Wait for a delay to ensure registers erasing */
-  IOE_Delay(2); 
+  IOE_Delay(10);
 }
 
+///**
+//  * @brief  Disable the AF for the selected IO pin(s).
+//  * @param  DeviceAddr: Device address on communication Bus.
+//  * @param  IO_Pin: The IO pin to be configured. This parameter could be any
+//  *         combination of the following values:
+//  *   @arg  STMPE811_PIN_x: Where x can be from 0 to 7.
+//  * @retval None
+//  */
+//void stmpe811_IO_DisableAF(uint16_t DeviceAddr, uint32_t IO_Pin)
+//{
+//  uint8_t tmp = 0;
+//
+//  /* Get the current state of the IO_AF register */
+//  tmp = IOE_Read(DeviceAddr, STMPE811_REG_IO_AF);
+//
+//  /* Enable the selected pins alternate function */
+//  tmp |= (uint8_t)IO_Pin;
+//
+//  /* Write back the new value in IO AF register */
+//  IOE_Write(DeviceAddr, STMPE811_REG_IO_AF, tmp);
+//
+//}
 
-/**
-  * @brief  Disable the AF for the selected IO pin(s).
-  * @param  DeviceAddr: Device address on communication Bus.  
-  * @param  IO_Pin: The IO pin to be configured. This parameter could be any 
-  *         combination of the following values:
-  *   @arg  STMPE811_PIN_x: Where x can be from 0 to 7.        
-  * @retval None
-  */
-void stmpe811_IO_DisableAF(uint16_t DeviceAddr, uint32_t IO_Pin)
+///**
+//  * @brief  Enable the AF for the selected IO pin(s).
+//  * @param  DeviceAddr: Device address on communication Bus.
+//  * @param  IO_Pin: The IO pin to be configured. This parameter could be any
+//  *         combination of the following values:
+//  *   @arg  STMPE811_PIN_x: Where x can be from 0 to 7.
+//  * @retval None
+//  */
+//void stmpe811_IO_EnableAF(uint16_t DeviceAddr, uint32_t IO_Pin)
+//{
+//  uint8_t tmp = 0;
+//
+//  /* Get the current register value */
+//  tmp = IOE_Read(DeviceAddr, STMPE811_REG_IO_AF);
+//
+//  /* Enable the selected pins alternate function */
+//  tmp &= ~(uint8_t)IO_Pin;
+//
+//  /* Write back the new register value */
+//  IOE_Write(DeviceAddr, STMPE811_REG_IO_AF, tmp);
+//}
+
+///**
+//  * @brief  Configures the touch Screen Controller (Single point detection)
+//  * @param  DeviceAddr: Device address on communication Bus.
+//  * @retval None.
+//  */
+//void stmpe811_TS_Start(uint16_t DeviceAddr)
+//{
+//  uint8_t mode;
+//
+//  /* Get the current register value */
+//  mode = IOE_Read(DeviceAddr, STMPE811_REG_SYS_CTRL2);
+//
+//  /* Set the Functionalities to be Enabled */
+//  mode &= ~(STMPE811_IO_FCT);
+//
+//  /* Write the new register value */
+//  IOE_Write(DeviceAddr, STMPE811_REG_SYS_CTRL2, mode);
+//
+//  /* Select TSC pins in TSC alternate mode */
+//  stmpe811_IO_EnableAF(DeviceAddr, STMPE811_TOUCH_IO_ALL);
+//
+//  /* Set the Functionalities to be Enabled */
+//  mode &= ~(STMPE811_TS_FCT | STMPE811_ADC_FCT);
+//
+//  /* Set the new register value */
+//  IOE_Write(DeviceAddr, STMPE811_REG_SYS_CTRL2, mode);
+//
+//  /* Select Sample Time, bit number and ADC Reference */
+//  IOE_Write(DeviceAddr, STMPE811_REG_ADC_CTRL1, 0x49);
+//
+//  /* Wait for 2 ms */
+//  IOE_Delay(2);
+//
+//  /* Select the ADC clock speed: 3.25 MHz */
+//  IOE_Write(DeviceAddr, STMPE811_REG_ADC_CTRL2, 0x01);
+//
+//  /* Select 2 nF filter capacitor */
+//  /* Configuration:
+//     - Touch average control    : 4 samples
+//     - Touch delay time         : 500 uS
+//     - Panel driver setting time: 500 uS
+//  */
+//  IOE_Write(DeviceAddr, STMPE811_REG_TSC_CFG, 0x9A);
+//
+//  /* Configure the Touch FIFO threshold: single point reading */
+//  IOE_Write(DeviceAddr, STMPE811_REG_FIFO_TH, 0x01);
+//
+//  /* Clear the FIFO memory content. */
+//  IOE_Write(DeviceAddr, STMPE811_REG_FIFO_STA, 0x01);
+//
+//  /* Put the FIFO back into operation mode  */
+//  IOE_Write(DeviceAddr, STMPE811_REG_FIFO_STA, 0x00);
+//
+//  /* Set the range and accuracy pf the pressure measurement (Z) :
+//     - Fractional part :7
+//     - Whole part      :1
+//  */
+//  IOE_Write(DeviceAddr, STMPE811_REG_TSC_FRACT_XYZ, 0x01);
+//
+//  /* Set the driving capability (limit) of the device for TSC pins: 50mA */
+//  IOE_Write(DeviceAddr, STMPE811_REG_TSC_I_DRIVE, 0x01);
+//
+//  /* Touch screen control configuration (enable TSC):
+//     - No window tracking index
+//     - XYZ acquisition mode
+//   */
+//  IOE_Write(DeviceAddr, STMPE811_REG_TSC_CTRL, 0x01);
+//
+//  /*  Clear all the status pending bits if any */
+//  IOE_Write(DeviceAddr, STMPE811_REG_INT_STA, 0xFF);
+//
+//  /* Wait for 2 ms delay */
+//  IOE_Delay(2);
+//}
+
+void TSC2007_TS_Start(uint16_t DeviceAddr)
 {
-  uint8_t tmp = 0;
-  
-  /* Get the current state of the IO_AF register */
-  tmp = IOE_Read(DeviceAddr, STMPE811_REG_IO_AF);
-
-  /* Enable the selected pins alternate function */
-  tmp |= (uint8_t)IO_Pin;
-
-  /* Write back the new value in IO AF register */
-  IOE_Write(DeviceAddr, STMPE811_REG_IO_AF, tmp);
-  
+	IOE_Write(I2C_WRITE_ADDRESS,TOUCH_AD_ON_CMD);
+	IOE_Delay(60);  // Acquisition time (6 clock cycles)
 }
-
-/**
-  * @brief  Enable the AF for the selected IO pin(s).
-  * @param  DeviceAddr: Device address on communication Bus.  
-  * @param  IO_Pin: The IO pin to be configured. This parameter could be any 
-  *         combination of the following values:
-  *   @arg  STMPE811_PIN_x: Where x can be from 0 to 7.       
-  * @retval None
-  */
-void stmpe811_IO_EnableAF(uint16_t DeviceAddr, uint32_t IO_Pin)
-{
-  uint8_t tmp = 0;
-  
-  /* Get the current register value */
-  tmp = IOE_Read(DeviceAddr, STMPE811_REG_IO_AF);
-
-  /* Enable the selected pins alternate function */   
-  tmp &= ~(uint8_t)IO_Pin;   
-  
-  /* Write back the new register value */
-  IOE_Write(DeviceAddr, STMPE811_REG_IO_AF, tmp); 
-}
-
-/**
-  * @brief  Configures the touch Screen Controller (Single point detection)
-  * @param  DeviceAddr: Device address on communication Bus.
-  * @retval None.
-  */
-void stmpe811_TS_Start(uint16_t DeviceAddr)
-{
-  uint8_t mode;
-  
-  /* Get the current register value */
-  mode = IOE_Read(DeviceAddr, STMPE811_REG_SYS_CTRL2);
-  
-  /* Set the Functionalities to be Enabled */    
-  mode &= ~(STMPE811_IO_FCT);  
-  
-  /* Write the new register value */  
-  IOE_Write(DeviceAddr, STMPE811_REG_SYS_CTRL2, mode); 
-
-  /* Select TSC pins in TSC alternate mode */  
-  stmpe811_IO_EnableAF(DeviceAddr, STMPE811_TOUCH_IO_ALL);
-  
-  /* Set the Functionalities to be Enabled */    
-  mode &= ~(STMPE811_TS_FCT | STMPE811_ADC_FCT);  
-  
-  /* Set the new register value */  
-  IOE_Write(DeviceAddr, STMPE811_REG_SYS_CTRL2, mode); 
-  
-  /* Select Sample Time, bit number and ADC Reference */
-  IOE_Write(DeviceAddr, STMPE811_REG_ADC_CTRL1, 0x49);
-  
-  /* Wait for 2 ms */
-  IOE_Delay(2); 
-  
-  /* Select the ADC clock speed: 3.25 MHz */
-  IOE_Write(DeviceAddr, STMPE811_REG_ADC_CTRL2, 0x01);
-  
-  /* Select 2 nF filter capacitor */
-  /* Configuration: 
-     - Touch average control    : 4 samples
-     - Touch delay time         : 500 uS
-     - Panel driver setting time: 500 uS 
-  */
-  IOE_Write(DeviceAddr, STMPE811_REG_TSC_CFG, 0x9A); 
-  
-  /* Configure the Touch FIFO threshold: single point reading */
-  IOE_Write(DeviceAddr, STMPE811_REG_FIFO_TH, 0x01);
-  
-  /* Clear the FIFO memory content. */
-  IOE_Write(DeviceAddr, STMPE811_REG_FIFO_STA, 0x01);
-  
-  /* Put the FIFO back into operation mode  */
-  IOE_Write(DeviceAddr, STMPE811_REG_FIFO_STA, 0x00);
-  
-  /* Set the range and accuracy pf the pressure measurement (Z) : 
-     - Fractional part :7 
-     - Whole part      :1 
-  */
-  IOE_Write(DeviceAddr, STMPE811_REG_TSC_FRACT_XYZ, 0x01);
-  
-  /* Set the driving capability (limit) of the device for TSC pins: 50mA */
-  IOE_Write(DeviceAddr, STMPE811_REG_TSC_I_DRIVE, 0x01);
-  
-  /* Touch screen control configuration (enable TSC):
-     - No window tracking index
-     - XYZ acquisition mode
-   */
-  IOE_Write(DeviceAddr, STMPE811_REG_TSC_CTRL, 0x01);
-  
-  /*  Clear all the status pending bits if any */
-  IOE_Write(DeviceAddr, STMPE811_REG_INT_STA, 0xFF);
-
-  /* Wait for 2 ms delay */
-  IOE_Delay(2); 
-}
-
 /**
   * @brief  Return if there is touch detected or not.
   * @param  DeviceAddr: Device address on communication Bus.
   * @retval Touch detected state.
   */
-uint8_t stmpe811_TS_DetectTouch(uint16_t DeviceAddr)
+//uint8_t stmpe811_TS_DetectTouch(uint16_t DeviceAddr)
+//{
+//  uint8_t state;
+//  uint8_t ret = 0;
+//
+//  state = ((IOE_Read(DeviceAddr, STMPE811_REG_TSC_CTRL) & (uint8_t)STMPE811_TS_CTRL_STATUS) == (uint8_t)0x80);
+//
+//  if(state > 0)
+//  {
+//    if(IOE_Read(DeviceAddr, STMPE811_REG_FIFO_SIZE) > 0)
+//    {
+//      ret = 1;
+//    }
+//  }
+//  else
+//  {
+//    /* Reset FIFO */
+//    IOE_Write(DeviceAddr, STMPE811_REG_FIFO_STA, 0x01);
+//    /* Enable the FIFO again */
+//    IOE_Write(DeviceAddr, STMPE811_REG_FIFO_STA, 0x00);
+//  }
+//
+//  return ret;
+//}
+extern volatile  bool detected;
+bool TSC2007_TS_DetectTouch(uint16_t DeviceAddr)
 {
-  uint8_t state;
-  uint8_t ret = 0;
-  
-  state = ((IOE_Read(DeviceAddr, STMPE811_REG_TSC_CTRL) & (uint8_t)STMPE811_TS_CTRL_STATUS) == (uint8_t)0x80);
-  
-  if(state > 0)
+  if(detected == true)
   {
-    if(IOE_Read(DeviceAddr, STMPE811_REG_FIFO_SIZE) > 0)
-    {
-      ret = 1;
-    }
+	  return true;
   }
   else
-  {
-    /* Reset FIFO */
-    IOE_Write(DeviceAddr, STMPE811_REG_FIFO_STA, 0x01);
-    /* Enable the FIFO again */
-    IOE_Write(DeviceAddr, STMPE811_REG_FIFO_STA, 0x00);
-  }
-  
-  return ret;
+	  return false;
 }
 
 /**
@@ -234,38 +269,61 @@ uint8_t stmpe811_TS_DetectTouch(uint16_t DeviceAddr)
   * @param  Y: Pointer to Y position value   
   * @retval None.
   */
-void stmpe811_TS_GetXY(uint16_t DeviceAddr, uint16_t *X, uint16_t *Y)
+//void stmpe811_TS_GetXY(uint16_t DeviceAddr, uint16_t *X, uint16_t *Y)
+//{
+//  uint8_t  dataXYZ[4];
+//  uint32_t uldataXYZ;
+//
+//  IOE_ReadMultiple(DeviceAddr, STMPE811_REG_TSC_DATA_NON_INC, dataXYZ, sizeof(dataXYZ)) ;
+//
+//  /* Calculate positions values */
+//  uldataXYZ = (dataXYZ[0] << 24)|(dataXYZ[1] << 16)|(dataXYZ[2] << 8)|(dataXYZ[3] << 0);
+//  *X = (uldataXYZ >> 20) & 0x00000FFF;
+//  *Y = (uldataXYZ >>  8) & 0x00000FFF;
+//
+//  /* Reset FIFO */
+//  IOE_Write(DeviceAddr, STMPE811_REG_FIFO_STA, 0x01);
+//  /* Enable the FIFO again */
+//  IOE_Write(DeviceAddr, STMPE811_REG_FIFO_STA, 0x00);
+//}
+uint16_t Reverse16(uint16_t value)
 {
-  uint8_t  dataXYZ[4];
-  uint32_t uldataXYZ;
-  
-  IOE_ReadMultiple(DeviceAddr, STMPE811_REG_TSC_DATA_NON_INC, dataXYZ, sizeof(dataXYZ)) ;
-  
-  /* Calculate positions values */
-  uldataXYZ = (dataXYZ[0] << 24)|(dataXYZ[1] << 16)|(dataXYZ[2] << 8)|(dataXYZ[3] << 0);     
-  *X = (uldataXYZ >> 20) & 0x00000FFF;     
-  *Y = (uldataXYZ >>  8) & 0x00000FFF;     
-  
-  /* Reset FIFO */
-  IOE_Write(DeviceAddr, STMPE811_REG_FIFO_STA, 0x01);
-  /* Enable the FIFO again */
-  IOE_Write(DeviceAddr, STMPE811_REG_FIFO_STA, 0x00);
+    return (((value & 0x00FF) << 8) |
+            ((value & 0xFF00) >> 8));
 }
 
-/**
-  * @}
-  */ 
+typedef union
+{
+	uint8_t arr8[2];
+	uint16_t buff16;
+}tsc2007_buff;
 
-/**
-  * @}
-  */ 
+void TSC2007_TS_GetXY(uint16_t DeviceAddr, uint16_t *X, uint16_t *Y)
+{
 
-/**
-  * @}
-  */ 
 
-/**
-  * @}
-  */ 
+  tsc2007_buff xbuff, ybuff;
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+  uint32_t uldataXYZ;
+
+  IOE_ReadMultiple(DeviceAddr, TSC2007_MEASURE_X, &xbuff.arr8[0], 2);  // TODO Single or multiple for MAV
+//  xbuff.buff16 = (xbuff.arr8[1] <<8)|(xbuff.arr8[0] >> (16 -8));
+  uint8_t temp_swap = xbuff.arr8[0] ;
+  xbuff.arr8[0]  =  xbuff.arr8[1] ;
+  xbuff.arr8[1] = temp_swap ;
+  // buff16 is swapped now !
+  *X = xbuff.buff16 ;
+  // TODO swap
+  IOE_Delay(1);
+  IOE_ReadMultiple(DeviceAddr, TSC2007_MEASURE_Y, &ybuff, 2);  // TODO Single or multiple for MAV
+  temp_swap = ybuff.arr8[0] ;
+  ybuff.arr8[0]  =  ybuff.arr8[1] ;
+  ybuff.arr8[1] = temp_swap ;
+  // buff16 is swapped now !
+  *Y = ybuff.buff16 ;
+  IOE_Delay(1);
+//TODO add calculations  if needed
+  /* Calculate positions values */
+
+}
+
